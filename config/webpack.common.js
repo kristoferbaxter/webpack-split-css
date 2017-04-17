@@ -1,4 +1,5 @@
 const autoprefixer = require('autoprefixer');
+const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 const BabelLoaderRule = {
   test: /\.js$/,
@@ -39,7 +40,13 @@ const CSSLoaderRule = (UsableExtractCSSPlugin, browsers=["last 2 versions"]) => 
   };
 };
 
+const CleanupPlugin = new WebpackCleanupPlugin({
+  exclude: ['.gitignore'],
+  quiet: true
+});
+
 module.exports = {
   BabelLoaderRule,
-  CSSLoaderRule
+  CSSLoaderRule,
+  CleanupPlugin
 };

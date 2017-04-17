@@ -27,6 +27,7 @@ module.exports = {
     ]
   },
   plugins: [
+    CommonOptions.CleanupPlugin,
     ExtractCSSPlugin
   ]
 };
