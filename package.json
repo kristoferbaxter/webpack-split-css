@@ -1,0 +1,25 @@
+{
+  "name": "webpack-split-css",
+  "version": "1.0.0",
+  "description": "Demonstrate two potential items Webpack could improve on (or already supports and I did not know!)",
+  "main": "index.js",
+  "author": "Kristofer Baxter",
+  "license": "MIT",
+  "scripts": {
+    "bundle:allchunks": "node_modules/.bin/webpack --config config/webpack.allchunks.js",
+    "bundle:default": "node_modules/.bin/webpack --config config/webpack.default.js",
+    "bundle": "yarn run bundle:allchunks; yarn run bundle:default"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "bundle-loader": "^0.5.5",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "postcss-loader": "^1.3.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}

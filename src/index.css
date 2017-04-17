@@ -1,0 +1,19 @@
+
+.currentRoute {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.routeDisplay {
+  font-size: 2rem;
+}
+
+.routeContainer {
+  width: 100px;
+  height: 100px;
+  margin: 3em;
+}
