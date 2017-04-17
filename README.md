@@ -6,7 +6,7 @@ I've had trouble conveying this difficulty over 140 characters on Twitter, so I 
 
 My hope is that I'm just missing something obvious.
 
-Installation:
+### Installation:
 1. Check out the repo.
 2. yarn
 3. yarn run bundle
